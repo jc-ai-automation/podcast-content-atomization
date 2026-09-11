@@ -292,6 +292,44 @@ This can help content teams:
 
 The system is designed to support a human-in-the-loop content operation rather than allowing AI-generated content to be published without review.
 
+## Project Screenshots
+
+### n8n Automation Architecture
+
+The n8n workflow orchestrates the podcast content pipeline, connecting content ingestion, processing, AI-powered atomization, database operations, and review logic.
+
+![Podcast Content Atomization n8n Workflow](screenshots/n8n-podcast.png.jpg)
+
+### Source File Storage
+
+Original podcast files are stored in Google Drive, preserving the source media used by the automation.
+
+![Podcast Source Storage](screenshots/gdrive.png.jpg)
+
+### Episode Management
+
+Episode-level information is stored separately, providing a structured record for each podcast processed by the system.
+
+![Podcast Episodes Database](screenshots/episodes.png.jpg)
+
+### Transcript Chunk Storage
+
+Podcast transcripts are divided and stored as structured chunks, allowing long-form content to be organized and processed downstream.
+
+![Transcript Chunks](screenshots/transcript-chunks.png.jpg)
+
+### Content Moment Extraction
+
+The system identifies reusable moments and ideas from the long-form podcast content that can be used as the foundation for smaller content assets.
+
+![Content Moments](screenshots/content-moments.png.jpg)
+
+### Generated Content Assets
+
+Generated content assets are stored in the content database together with the information required to manage their lifecycle and review status.
+
+![Generated Content Assets](screenshots/content-assets.png.jpg)
+
 ## V1.0 Boundary
 
 Podcast Content Atomization Automation V1.0 focuses on transforming long-form podcast content into structured, reusable content assets.
